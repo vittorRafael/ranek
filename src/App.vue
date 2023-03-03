@@ -85,4 +85,22 @@ export default {
     background-color: rgba(136,119,255,0.5);
     border-radius: 10px;
   }
+
+  input, textarea{
+    border-radius: 4px;
+    border: 1px solid white;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(30, 60, 90, 0.1);
+    transition: all .3s;
+    font-size: 1rem;
+    font-family: Arial;
+    margin-bottom: 15px;
+  }
+  
+  input:hover, textarea:hover
+  input:focus, textarea:focus{
+    outline: none;
+    box-shadow: 0 6px 12px rgba(30, 60, 90, 0.2);
+    border-color: #87f;
+  }
 </style>
