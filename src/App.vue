@@ -2,7 +2,9 @@
   <div id="app">
     <TheHeader />
     <main>
-      <router-view />
+      <transition mode="out-in">
+        <router-view />
+      </transition>
     </main>
     <TheFooter />
   </div>
@@ -86,6 +88,10 @@ export default {
     border-radius: 10px;
   }
 
+  label{
+    margin-bottom: 5px;
+  }
+
   input, textarea{
     border-radius: 4px;
     border: 1px solid white;
@@ -97,7 +103,7 @@ export default {
     margin-bottom: 15px;
   }
   
-  input:hover, textarea:hover
+  input:hover, textarea:hover,
   input:focus, textarea:focus{
     outline: none;
     box-shadow: 0 6px 12px rgba(30, 60, 90, 0.2);
